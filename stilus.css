@@ -54,25 +54,20 @@ main {
     flex-wrap: wrap;
 }
 
-.tartalom {
+.car {
     width: 300px;
     margin: 10px;
-
 }
 
-.tartalom img {
-    width: 150%;
+.car img {
+    width: 80%;
     height: auto;
     border-radius: 8px;
     border: 2px solid #333;
-    display: grid;
-    grid-template-columns: fr fr;
-    grid-area: 1 1;
-     
 }
 
-.tartalom p {
-    font-weight: normal;
+.car p {
+    font-weight: bold;
     margin-top: 10px;
 }
 
