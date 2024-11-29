@@ -1,0 +1,121 @@
+/* Alap stílusok */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fejléc stílus */
+header {
+    background-color: #333;
+    color: white;
+    padding: 3px;
+    text-align: center;
+}
+
+/* Menü stílus */
+nav {
+    background-color: #444;
+    padding: 10px;
+}
+p{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Tartalom stílus */
+main {
+    padding: 20px;
+    text-align: center;
+    grid-template-areas:
+        "h h"
+        "n n"
+        "a a"
+        "f f"
+        ;
+}
+
+
+
+.car {
+    width: 300px;
+    margin: 10px;
+}
+
+.tartalom img {
+    width: 60%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #333;
+    
+}
+
+
+.specifications {
+   margin: auto;
+   width: 60%;
+}
+
+
+article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.tartalom h1 {
+    text-decoration-line: underline;
+    margin-top: 10px;
+}
+
+/* Lábléc stílus */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.5px;
+    bottom: 0;
+    width: 100%;
+}
+@media  screen and (max-width:600px) {
+    nav ul{
+        
+        grid-template-columns: 1fr;
+        list-style: none;
+        
+    }
+    article{
+        grid-template-columns: 1fr;
+    gap:10px;
+    grid-template-areas:
+        "h "
+        "n "
+        "a " 
+        "f "
+        ;
+    }
+    
+}
