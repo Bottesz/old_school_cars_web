@@ -50,10 +50,12 @@ nav ul li a:hover {
 main {
     padding: 20px;
     text-align: center;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
     grid-template-areas:
         "h h"
         "n n"
-        "a a"
+        "a as"
         "f f"
         ;
 }
@@ -65,8 +67,8 @@ main {
     margin: 10px;
 }
 
-.tartalom img {
-    width: 60%;
+aside img {
+    width: 80%;
     height: auto;
     border-radius: 8px;
     border: 2px solid #333;
@@ -78,13 +80,23 @@ main {
    margin: auto;
    width: 60%;
 }
-
-
-article{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+header{
+    grid-area: h;
 }
+nav{
+    grid-area: n;
+}
+article{
+    grid-area: a;
+}
+aside{
+    grid-area: as;
+
+}
+footer{
+    grid-area: f;
+}
+
 
 .tartalom h1 {
     text-decoration-line: underline;
